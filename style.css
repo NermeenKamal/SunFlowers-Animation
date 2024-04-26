@@ -1,0 +1,594 @@
+*{
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0;  
+}
+body{
+  height: 726px;
+  background: url(image/back.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.overlay{
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: -1;
+  background-color: rgba(80, 60, 60,0.5);
+  height: 1000px;
+
+}
+
+.p1{
+  width: 346px;
+  height: 102px;
+  animation-name: seed;
+  animation-duration: 3s;
+  position: absolute;
+  left: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+@keyframes seed {
+  0%{
+    left: 5px;
+  } 
+  50%{
+    width: 600px;
+    margin-left: 100px;
+    left: 500px;
+  }
+  100%{
+    left: 1120px;
+  } 
+    }
+.p1:hover{
+  animation-play-state: paused; 
+}
+img{
+  width: 171px;
+  height: 102px;
+}
+.R{
+  animation-name: water;
+  animation-duration: 3s;
+  width: 171px;
+  position: absolute;
+  margin-left: -74px;
+  z-index: -1;
+  animation-timing-function: linear;
+  opacity: 0;
+  animation-fill-mode: forwards;
+
+}
+@keyframes water {
+  0%{
+    opacity: 1;
+    clip: rect(0, 40px, 30px, 0);
+  }
+  25%{
+    clip: rect(0, 100px, 100px, 0);
+  }
+  40%{
+    clip: rect(0, 130px, 100px, 0);
+  }
+  55%{
+    clip: rect(0, 171px, 130px, 0);
+ }
+ 75%{
+   clip: rect(0, 130px, 100px, 0);
+
+ }
+ 85%{
+   clip: rect(0, 100px, 100px, 0);
+
+ }
+ 100%{
+   clip: rect(0, 0, 0, 0);
+ }
+ 
+}
+.p2{
+  margin-top: 20px;
+  width: 346px;
+  height: 102px;
+  animation-name: plant;
+  animation-duration: 3s;
+  position: absolute;
+  right: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+  animation-delay: 3s;
+}
+@keyframes plant {
+  0%{
+    left: 5px;
+  } 
+  50%{
+    width: 600px;
+    margin-left: 100px;
+    left: 500px;
+  }
+  100%{
+    left: 1120px;
+  } 
+    }
+.p2:hover{
+  animation-play-state: paused; 
+}
+.RR{
+  animation-name: water-plant;
+  animation-duration: 3s;
+  width: 171px;
+  position: absolute;
+  margin-left: -74px;
+  z-index: -1;
+  animation-timing-function: linear;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+
+}
+@keyframes water-plant {
+  0%{
+    opacity: 1;
+    clip: rect(0, 40px, 30px, 0);
+  }
+  25%{
+    clip: rect(0, 100px, 100px, 0);
+  }
+  40%{
+    clip: rect(0, 130px, 100px, 0);
+  }
+  55%{
+    clip: rect(0, 171px, 130px, 0);
+ }
+ 75%{
+   clip: rect(0, 130px, 100px, 0);
+
+ }
+ 85%{
+   clip: rect(0, 100px, 100px, 0);
+
+ }
+ 100%{
+   clip: rect(0, 0, 0, 0);
+ }
+}
+
+.RRR{
+  animation-name: water-plant-two;
+  animation-duration: 3s;
+  width: 171px;
+  position: absolute;
+  margin-left: -74px;
+  z-index: -1;
+  animation-timing-function: linear;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 6s;
+
+}
+@keyframes water-plant-two {
+  0%{
+    opacity: 1;
+    clip: rect(0, 40px, 30px, 0);
+  }
+  25%{
+    clip: rect(0, 100px, 100px, 0);
+  }
+  40%{
+    clip: rect(0, 130px, 100px, 0);
+  }
+  55%{
+    clip: rect(0, 171px, 130px, 0);
+ }
+ 75%{
+   clip: rect(0, 130px, 100px, 0);
+
+ }
+ 85%{
+   clip: rect(0, 100px, 100px, 0);
+
+ }
+ 100%{
+   clip: rect(0, 0, 0, 0);
+ }
+}
+
+
+.p3{
+  margin-top: 20px;
+  width: 346px;
+  height: 102px;
+  animation-name: plant-two;
+  animation-duration: 3s;
+  position: absolute;
+  left: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-delay: 6s;
+}
+@keyframes plant-two {
+  0%{
+    left: 5px;
+  } 
+  50%{
+    width: 600px;
+    margin-left: 100px;
+    left: 500px;
+  }
+  100%{
+    left: 1120px;
+  } 
+    }
+.p3:hover{
+  animation-play-state: paused; 
+}
+
+
+
+.RRRR{
+  animation-name: water-plant-three;
+  animation-duration: 3s;
+  width: 171px;
+  position: absolute;
+  margin-left: -74px;
+  z-index: -1;
+  animation-timing-function: linear;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 9s;
+
+}
+@keyframes water-plant-three {
+  0%{
+    opacity: 1;
+    clip: rect(0, 40px, 30px, 0);
+  }
+  25%{
+    clip: rect(0, 100px, 100px, 0);
+  }
+  40%{
+    clip: rect(0, 130px, 100px, 0);
+  }
+  55%{
+    clip: rect(0, 171px, 130px, 0);
+ }
+ 75%{
+   clip: rect(0, 130px, 100px, 0);
+
+ }
+ 85%{
+   clip: rect(0, 100px, 100px, 0);
+
+ }
+ 100%{
+   clip: rect(0, 0, 0, 0);
+ }
+}
+
+
+.p4{
+  margin-top: 20px;
+  width: 346px;
+  height: 102px;
+  animation-name: plant-three;
+  animation-duration: 3s;
+  position: absolute;
+  right: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+  animation-delay: 9s;
+}
+@keyframes plant-three {
+  0%{
+    left: 5px;
+  } 
+  50%{
+    width: 600px;
+    margin-left: 100px;
+    left: 500px;
+  }
+  100%{
+    left: 1120px;
+  } 
+    }
+.p4:hover{
+  animation-play-state: paused; 
+}
+
+
+.RRRRR{
+  animation-name: water-plant-four;
+  animation-duration: 3s;
+  width: 171px;
+  position: absolute;
+  margin-left: -74px;
+  z-index: -1;
+  animation-timing-function: linear;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 12s;
+
+}
+@keyframes water-plant-four {
+  0%{
+    opacity: 1;
+    clip: rect(0, 40px, 30px, 0);
+  }
+  25%{
+    clip: rect(0, 100px, 100px, 0);
+  }
+  40%{
+    clip: rect(0, 130px, 100px, 0);
+  }
+  55%{
+    clip: rect(0, 171px, 130px, 0);
+ }
+ 75%{
+   clip: rect(0, 130px, 100px, 0);
+
+ }
+ 85%{
+   clip: rect(0, 100px, 100px, 0);
+
+ }
+ 100%{
+   clip: rect(0, 0, 0, 0);
+ }
+}
+
+
+.p5{
+  margin-top: 20px;
+  width: 346px;
+  height: 102px;
+  animation-name: plant-four;
+  animation-duration: 3s;
+  position: absolute;
+  left: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-delay: 12s;
+}
+@keyframes plant-four {
+  0%{
+    left: 5px;
+  } 
+  50%{
+    width: 600px;
+    margin-left: 100px;
+    left: 500px;
+  }
+  100%{
+    left: 1120px;
+  } 
+    }
+.p5:hover{
+  animation-play-state: paused; 
+}
+
+
+.Rw{
+  animation-name: water-plant-five;
+  animation-duration: 3s;
+  width: 171px;
+  position: absolute;
+  margin-left: -74px;
+  z-index: -1;
+  animation-timing-function: linear;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 15s;
+
+}
+@keyframes water-plant-five {
+  0%{
+    opacity: 1;
+    clip: rect(0, 40px, 30px, 0);
+  }
+  25%{
+    clip: rect(0, 100px, 100px, 0);
+  }
+  40%{
+    clip: rect(0, 130px, 100px, 0);
+  }
+  55%{
+    clip: rect(0, 171px, 130px, 0);
+ }
+ 75%{
+   clip: rect(0, 130px, 100px, 0);
+
+ }
+ 85%{
+   clip: rect(0, 100px, 100px, 0);
+
+ }
+ 100%{
+   clip: rect(0, 0, 0, 0);
+ }
+}
+
+
+.p6{
+  margin-top: 20px;
+  width: 346px;
+  height: 102px;
+  animation-name: plant-five;
+  animation-duration: 3s;
+  position: absolute;
+  right: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+  animation-delay: 15s;
+}
+@keyframes plant-five {
+  0%{
+    left: 5px;
+  } 
+  50%{
+    width: 600px;
+    margin-left: 100px;
+    left: 500px;
+  }
+  100%{
+    left: 1120px;
+  } 
+    }
+.p6:hover{
+  animation-play-state: paused; 
+}
+
+
+.Rww{
+  animation-name: water-plant-six;
+  animation-duration: 3s;
+  width: 171px;
+  position: absolute;
+  margin-left: -74px;
+  z-index: -1;
+  animation-timing-function: linear;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 18s;
+
+}
+@keyframes water-plant-six {
+  0%{
+    opacity: 1;
+    clip: rect(0, 40px, 30px, 0);
+  }
+  25%{
+    clip: rect(0, 100px, 100px, 0);
+  }
+  40%{
+    clip: rect(0, 130px, 100px, 0);
+  }
+  55%{
+    clip: rect(0, 171px, 130px, 0);
+ }
+ 75%{
+   clip: rect(0, 130px, 100px, 0);
+
+ }
+ 85%{
+   clip: rect(0, 100px, 100px, 0);
+
+ }
+ 100%{
+   clip: rect(0, 0, 0, 0);
+ }
+}
+
+
+.p7{
+  margin-top: 20px;
+  width: 346px;
+  height: 102px;
+  animation-name: plant-six;
+  animation-duration: 3s;
+  position: absolute;
+  left: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-delay: 18s;
+}
+@keyframes plant-six {
+  0%{
+    left: 5px;
+  } 
+  50%{
+    width: 600px;
+    margin-left: 100px;
+    left: 500px;
+  }
+  100%{
+    left: 1120px;
+  } 
+    }
+.p7:hover{
+  animation-play-state: paused; 
+}
+
+
+.Rwww{
+  animation-name: water-plant-seven;
+  animation-duration: 3s;
+  width: 171px;
+  position: absolute;
+  margin-left: -74px;
+  z-index: -1;
+  animation-timing-function: linear;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 21s;
+
+}
+@keyframes water-plant-seven {
+  0%{
+    opacity: 1;
+    clip: rect(0, 40px, 30px, 0);
+  }
+  25%{
+    clip: rect(0, 100px, 100px, 0);
+  }
+  40%{
+    clip: rect(0, 130px, 100px, 0);
+  }
+  55%{
+    clip: rect(0, 171px, 130px, 0);
+ }
+ 75%{
+   clip: rect(0, 130px, 100px, 0);
+
+ }
+ 85%{
+   clip: rect(0, 100px, 100px, 0);
+
+ }
+ 100%{
+   clip: rect(0, 0, 0, 0);
+ }
+}
+
+
+.p8{
+  
+  margin-top: 20px;
+  width: 346px;
+  height: 102px;
+  animation-name: plant-six;
+  animation-duration: 3s;
+  position: absolute;
+  right: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+  animation-delay: 21s;
+}
+@keyframes plant-seven {
+  0%{
+    left: 5px;
+  } 
+  50%{
+    width: 600px;
+    margin-left: 100px;
+    left: 500px;
+  }
+  100%{
+    left: 1120px;
+  } 
+    }
+.p8:hover{
+  animation-play-state: paused; 
+}
